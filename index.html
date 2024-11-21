@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC-Connect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="VC logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>VC-Connect</h1>
+            </div> 
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Welcome to VC-Connect</h1>
+            <p>Your ultimate guide to campus life!</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="VC logo.png" alt="About Us Image">
+            <div class="about-text">
+                <p>
+                    Campus Companion is designed to make student life easier and more efficient.
+                    Whether you're a Day-Scholar looking for transport and dining options or a Hosteller
+                    planning your weekend outings, we've got you covered!
+                </p>
+                <p>
+                    With a wide range of services and resources, we aim to bridge the gap between
+                    campus and community, ensuring students have access to everything they need.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Select Your Category</h2>
+        <div class="options-container">
+            <a href="day-scholar.html" class="option">
+                <h3>Day-Scholar</h3>
+                <p>Find rentals, transport, and more.</p>
+            </a>
+            <a href="hosteller.html" class="option">
+                <h3>Hosteller</h3>
+                <p>Discover places to visit and services.</p>
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">What is VC-Connect? <span>+</span></h3>
+            <p class="faq-answer">VC-Connect is a platform that helps students navigate their campus life efficiently.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">How does it work? <span>+</span></h3>
+            <p class="faq-answer">Simply choose your category (Day-Scholar or Hosteller), and we’ll guide you to relevant resources.</p>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleFAQ(this)">Is it free? <span>+</span></h3>
+            <p class="faq-answer">Yes, Campus Companion is completely free for students.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VC-Connect. All rights reserved.</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

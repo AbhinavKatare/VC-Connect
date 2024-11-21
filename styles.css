@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: #404147;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #EEF9FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo h1 {
+    font-size: 1.8rem;
+    color: #001E34;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #404147;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #5BC7FC;
+}
+
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #EEF9FF;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to bottom, rgba(0, 30, 52, 0.8), rgba(0, 30, 52, 0.6)), url('students-walking-relaxing-campus-park_1262-20690.avif') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEF9FF;
+    text-align: center;
+}
+
+.hero-content {
+    animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 20px;
+    background-color: #EEF9FF;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    color: #001E34;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.about-content img {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #404147;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #001E34;
+    margin-bottom: 20px;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.option {
+    background-color: #EEF9FF;
+    border: 2px solid #5BC7FC;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.option:hover {
+    transform: translateY(-10px);
+    background-color: #5BC7FC;
+    color: #FFFFFF;
+}
+
+.option h3 {
+    font-size: 1.5rem;
+}
+
+.option p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* FAQs Section */
+.faqs {
+    padding: 60px 20px;
+    background-color: #EEF9FF;
+    text-align: center;
+}
+
+.faqs h2 {
+    font-size: 2rem;
+    color: #001E34;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin: 20px 0;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #404147;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #001E34;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #001E34;
+    color: #EEF9FF;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

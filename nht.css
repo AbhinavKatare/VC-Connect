@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+    color: #404147;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #EEF9FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo h1 {
+    font-size: 1.8rem;
+    color: #001E34;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #404147;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #5BC7FC;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #EEF9FF;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+
+.page-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #5BC7FC, #EEF9FF);
+    color: white;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.info-box {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+}
+
+.info-box.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-box img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.info-box .info-text h3 {
+    font-size: 24px;
+    color: #001E34;
+}
+
+.info-box .info-text p {
+    font-size: 16px;
+    color: #404147;
+}
+
+footer {
+    background-color: #001E34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+footer nav ul li a {
+    color: #EEF9FF;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    color: #5BC7FC;
+}

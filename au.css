@@ -1,0 +1,215 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #404147;
+    line-height: 1.6;
+    background-color: #EEF9FF;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #EEF9FF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo h1 {
+    font-size: 1.8rem;
+    color: #001E34;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #404147;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #5BC7FC;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #EEF9FF;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 30, 52, 0.9), rgba(0, 30, 52, 0.7));
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 60px 50px;
+    background-color: #FFFFFF;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #001E34;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Team Member Section */
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Alternate Layout for Team Members */
+.team-member:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.team-member img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    color: #001E34;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #404147;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #001E34;
+    color: #FFFFFF;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #5BC7FC;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .team-member {
+        flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .team-member:nth-child(even) {
+        flex-direction: column;
+    }
+}
